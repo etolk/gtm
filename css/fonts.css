@@ -12,6 +12,7 @@
          url('fonts/raleway/raleway-thin-webfont.svg#ralewaythin') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'raleway-extra-light';
@@ -22,6 +23,7 @@
          url('fonts/raleway/raleway-extralight-webfont.svg#ralewayextralight') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'raleway-light';
@@ -32,6 +34,7 @@
          url('fonts/raleway/raleway-light-webfont.svg#ralewaylight') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'raleway-regular';
@@ -42,6 +45,7 @@
          url('fonts/raleway/raleway-regular-webfont.svg#ralewayregular') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'raleway-medium';
@@ -52,6 +56,7 @@
          url('fonts/raleway/raleway-medium-webfont.svg#ralewaymedium') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'raleway-semibold';
@@ -62,6 +67,7 @@
          url('fonts/raleway/raleway-semibold-webfont.svg#ralewaysemibold') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'raleway-bold';
@@ -72,6 +78,7 @@
          url('fonts/raleway/raleway-bold-webfont.svg#ralewaybold') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'raleway-heavy';
@@ -82,6 +89,7 @@
          url('fonts/raleway/raleway-heavy-webfont.svg#ralewayheavy') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 /*
@@ -97,6 +105,7 @@
          url('fonts/notosans/notosans-bold-webfont.svg#noto_sansbold') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'notosans-bold-italic';
@@ -107,6 +116,7 @@
          url('fonts/notosans/notosans-bolditalic-webfont.svg#noto_sansbold_italic') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'notosans-italic';
@@ -117,6 +127,7 @@
          url('fonts/notosans/notosans-italic-webfont.svg#noto_sansitalic') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'notosans-regular';
@@ -127,6 +138,7 @@
          url('fonts/notosans/notosans-regular-webfont.svg#noto_sansregular') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 
@@ -138,16 +150,19 @@
    @font-face {
    font-family: 'raleway-regular';
    src: url('fonts/raleway/raleway-regular-webfont.svg#ralewayregular') format('svg');
+   font-display: swap;
    }
 
    @font-face {
    font-family: 'raleway-semibold';
    src: url('fonts/raleway/raleway-semibold-webfont.svg#ralewaysemibold') format('svg');
+   font-display: swap;
    }
 
    @font-face {
    font-family: 'raleway-bold';
    src: url('fonts/raleway/raleway-bold-webfont.svg#ralewaybold') format('svg');
+   font-display: swap;
    }
 
 }
