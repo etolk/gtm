@@ -801,6 +801,36 @@ properly.
 	margin-right: auto !important;
 	text-align: center !important;
 }
+/*  Cookie banner -------------------------------------------------- */
+
+.cookie-banner {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  z-index: 9999; /* Ensure the banner is on top of all elements */
+}
+
+/* Other styles */
+.cookie-btn {
+  padding: 8px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+}
+.cookie-btn.accept {
+  background-color: #4CAF50;
+}
+.cookie-btn.decline {
+  background-color: #f44336;
+}
 
 
 
