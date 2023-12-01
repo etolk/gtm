@@ -8,7 +8,7 @@ window.onload = function() {
 
 function acceptCookies() {
   document.cookie = "cookieConsent=accepted; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
-  window.location.reload();
+  document.getElementById('cookieBanner').style.display = 'none';
 }
 
 function declineCookies() {
