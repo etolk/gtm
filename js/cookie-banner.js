@@ -16,7 +16,12 @@ function acceptCookies() {
 }
 
 function declineCookies() {
+  deleteCookie("cookieConsent");
   document.getElementById('cookieBanner').style.display = 'none';
+}
+
+function deleteCookie(name) {
+  document.cookie = name + '=; Max-Age=-99999999;';  
 }
 
 function getCookie(name) {
