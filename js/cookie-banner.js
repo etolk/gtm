@@ -3,7 +3,7 @@ function showCookieBanner() {
 }
 
 window.onload = function() {
-  if (getCookie("cookieConsent") === "accepted") {
+  if (getCookie("cookieConsent") === "accepted" || getCookie("cookieConsent") === "declined") {
     document.getElementById('cookieBanner').style.display = 'none';
   } else {
     document.getElementById('cookieBanner').style.display = 'block';
@@ -16,12 +16,8 @@ function acceptCookies() {
 }
 
 function declineCookies() {
-  deleteCookie("cookieConsent");
+  document.cookie = "cookieConsent=declined; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
   document.getElementById('cookieBanner').style.display = 'none';
-}
-
-function deleteCookie(name) {
-  document.cookie = name + '=; Max-Age=-99999999;';  
 }
 
 function getCookie(name) {
