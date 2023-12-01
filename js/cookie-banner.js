@@ -1,3 +1,7 @@
+function showCookieBanner() {
+  document.getElementById('cookieBanner').style.display = 'block';
+}
+
 window.onload = function() {
   if (getCookie("cookieConsent") === "accepted") {
     document.getElementById('cookieBanner').style.display = 'none';
