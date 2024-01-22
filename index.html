@@ -5,26 +5,17 @@
 <head>
    <!-- Tealium
    ================================================== -->
+	<script src="https://tags.tiqcdn.com/utag/feld-m.de/evgeny/prod/utag.sync.js"></script>
 	
-   <!-- Standard/required to declare window.tealium and set config. This must execute before any tealium.track calls -->
+	<!-- Loading script asynchronously -->
 	<script type="text/javascript">
-	  (function(t,e,a,l,i,u,m,j,s){
-	    m=function(o,p,q){j.q.push([o,p,q])};j=u[i]={q:[],config:function(n,d)
-	    {m("config",n,d)},track:function(n,d){m("track",n,d)},debug:function(n)
-	    {m("debug",n)}};s=function(){u[i]=Tealium(j.q)};j.config("init",
-	    [t,e,a,l]);if(u.Tealium&&u.TEAL&&u.TEAL[t+"/"+e+"/"+l]){s()}else{j.callback=s}
-	  })("feld-m.de","main","prod","jmva6s","tealium",window);
+	    (function(a,b,c,d){
+	    a='https://tags.tiqcdn.com/utag/feld-m.de/evgeny/prod/utag.js';
+	    b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+	    a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+	    })();
 	</script>
 
- 
-	<script async src="https://tags.tiqcdn.com/tms/feld-m.de/main/prod/jmva6s/tealium.js"></script>
-	
-	 
-	<script type="text/javascript">
-	  // Tracking call may be included directly in page source here,
-	  // or for Single Page Apps (SPAs) it is included in app logic
-	  tealium.track( "Content Viewed", { page_name : "Hello World!" } ); // Sending your first event!"
-	</script>
 	
    <!-- Google Tag Manager 
    ================================================== -->
