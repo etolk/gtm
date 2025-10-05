@@ -73,11 +73,11 @@
             <h1>Payment Details</h1>
         </div>
         <div class="payment-details">
-            <p>Flight Number: <span id="flightNumber">FL123</span></p>
-            <p>From: <span id="origin">New York</span></p>
-            <p>To: <span id="destination">London</span></p>
+            <p>Flight Number: <span id="flightNumber">Loading...</span></p>
+            <p>From: <span id="origin">Loading...</span></p>
+            <p>To: <span id="destination">Loading...</span></p>
             <div class="amount">
-                Total Amount: <span id="amount">€599.99</span>
+                Total Amount: <span id="amount">Loading...</span>
             </div>
         </div>
         <div class="button-container">
@@ -89,5 +89,22 @@
             </button>
         </div>
     </div>
+    <script>
+        // Parse URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+
+        // Get flight details from URL parameters
+        const flightNumber = urlParams.get('flightNumber') || 'FL009';
+        const origin = urlParams.get('origin') || 'Frankfurt';
+        const destination = urlParams.get('destination') || 'Munich';
+        const price = urlParams.get('price') || '100.00';
+        const currency = urlParams.get('currency') || 'EUR';
+
+        // Update the page with real data
+        document.getElementById('flightNumber').textContent = flightNumber;
+        document.getElementById('origin').textContent = origin;
+        document.getElementById('destination').textContent = destination;
+        document.getElementById('amount').textContent = '€' + price;
+    </script>
 </body>
 </html>
